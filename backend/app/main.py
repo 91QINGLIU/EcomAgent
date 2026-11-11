@@ -34,7 +34,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.include_router(api_router)
+app.include_router(api_router)  #将不同业务模块的 API 统一注册
 
 
 @app.get("/health")

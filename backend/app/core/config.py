@@ -21,6 +21,7 @@ class Settings(BaseSettings):
     # LLM
     LLM_PROVIDER: Literal["openai", "anthropic", "gemini", "ollama"] = "openai"
     OPENAI_API_KEY: str = ""
+    OPENAI_BASE_URL: str = "https://api.openai.com/v1"
     OPENAI_MODEL: str = "gpt-4o"
     ANTHROPIC_API_KEY: str = ""
     ANTHROPIC_MODEL: str = "claude-3-5-sonnet-20241022"
